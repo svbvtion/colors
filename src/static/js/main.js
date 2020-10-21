@@ -15,7 +15,7 @@ function createCards(cardName) {
 	const modal = document.querySelector('.modal');
 	const modalText = document.querySelector('.modal__text');
 
-	const select = document.querySelector('.select__item');
+	const select = document.querySelectorAll('.select__items');
 
 	let curentColorFormat = 'hex';
 
@@ -60,13 +60,18 @@ function createCards(cardName) {
 	});
 
 
-	select.addEventListener('click', function(e) {
-		console.log(e.target);
-		curentColorFormat = e.target.value;
-		cardText.forEach((i, index) => {
-			i.textContent = colorList[index][curentColorFormat]
+	select.forEach(item => {
+		console.log(item);
+		item.addEventListener('click', function(e) {
+			console.log(item);
+			curentColorFormat = e.target.value;
+			cardText.forEach((i, index) => {
+				i.textContent = colorList[index][curentColorFormat]
+			});
 		});
-	});
+	})
+
+	
 }
 
 
