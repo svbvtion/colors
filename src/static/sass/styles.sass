@@ -9,3 +9,33 @@
 
 //svg
 @import 'sprite'
+
+body
+	background-color: #f1f2f4
+	&.lock
+		overflow: hidden
+
+.container
+	+flex(space-between)
+	flex-direction: column
+	min-height: 100%
+.wrapper
+	max-width: 1500px
+	margin: 0 auto
+	+r(1540)
+		padding: 0 20px	
+
+.content
+	flex: 1
+
+
+
+		
+@import 'sections/header'
+
+@import 'sections/palettes'
+
+@import 'sections/cards'
+@import 'sections/select'
+
+@import 'sections/footer'

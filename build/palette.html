@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header__logo"><a class="logo logo__back" href="/">Back</a></div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="wrapper">
+          <div class="select">
+            <div class="select__item">
+              <select class="select__box">
+                <option class="select__item" value="hex">HEX</option>
+                <option class="select__item" value="rgb">RGB</option>
+                <option class="select__item" value="rgba">RGBA</option>
+                <option class="select__item" value="hsl">HSL</option>
+              </select>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards__body"></div>
+          </div>
+        </div>
+      </main>
+      <div class="modal"><span class="modal__text"></span></div>
+      <footer class="footer"></footer>
+    </div>
+    <script src="static/js/list.js" type="modal"></script>
+    <script src="static/js/main.js" type="module"></script>
+  </body>
+</html>

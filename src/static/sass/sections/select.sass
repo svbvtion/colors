@@ -1,0 +1,38 @@
+.select
+	width: 100%
+	margin-bottom: 50px
+	text-align: right
+
+	&__item
+		position: relative
+		display: inline-block
+		margin-left: auto
+		&:after
+			content: '\25bc'
+			height: 100%
+			position: absolute
+			top: 0
+			right: 0
+			+flex(center, center)
+			padding: 0 1rem
+			font-size: 17px
+			pointer-events: none
+			background-color: #ffb7a1
+			color: #fff
+			+smooth(.2)
+
+		&:hover:after
+			background-color: #fff
+			color: #ffb7a1
+		
+	&__box
+		appearance: none
+		cursor: pointer
+		text-transform: uppercase
+		border: none
+		background-color: #fff
+		outline: none
+		min-width: 9rem
+		padding: .7rem 4rem .7rem 1rem
+		font-size: 17px
+		color: #808080	
