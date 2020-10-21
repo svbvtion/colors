@@ -15,7 +15,7 @@ function createCards(cardName) {
 	const modal = document.querySelector('.modal');
 	const modalText = document.querySelector('.modal__text');
 
-	const select = document.querySelector('.select__box');
+	const select = document.querySelector('.select__item');
 
 	let curentColorFormat = 'hex';
 
@@ -61,6 +61,7 @@ function createCards(cardName) {
 
 
 	select.addEventListener('click', function(e) {
+		console.log(e.target);
 		curentColorFormat = e.target.value;
 		cardText.forEach((i, index) => {
 			i.textContent = colorList[index][curentColorFormat]
