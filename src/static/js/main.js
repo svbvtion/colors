@@ -61,9 +61,7 @@ function createCards(cardName) {
 
 
 	select.forEach(item => {
-		//console.log(item);
 		item.addEventListener('change', function(e) {
-			//console.log(item);
 			curentColorFormat = e.target.value;
 			cardText.forEach((i, index) => {
 				i.textContent = colorList[index][curentColorFormat]
