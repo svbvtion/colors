@@ -2,13 +2,25 @@
 	padding: 25px 0
 	background-color: $bg-secondary
 	margin-bottom: 50px
+	&__body
+		+flex(space-between, center)
+	&__title
+		text-transform: capitalize
+		font-size: 2em
+		font-weight: bold
+		text-align: right
+
+
 .logo
 	font-weight: bold
-	font-size: 1.5em
+	font-size: 2em
 	position: relative
 	&__back
 		display: flex
 		align-items: center
+		font-weight: normal
+		font-size: 1.5em
+		padding-right: 10px
 		&:hover
 			.logo
 				&__decor
@@ -17,4 +29,4 @@
 		margin-right: 5px
 		fill: #000
 		line-height: 0
-		font-size: .75em
+		font-size: 1em

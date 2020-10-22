@@ -8,8 +8,10 @@ createCards(curentScheme)
 
 function createCards(cardName) {
 
-	let colorList = list[cardName];
+	let curentPalette = list[cardName]
+	let colorList = curentPalette['colors'];
 
+	const headerBody = document.querySelector('.header__body');
 	const cardsContainer = document.querySelector('.cards__body');
 	const body = document.querySelector('body');
 	const modal = document.querySelector('.modal');
@@ -18,6 +20,10 @@ function createCards(cardName) {
 	const select = document.querySelectorAll('.select__box');
 
 	let curentColorFormat = 'hex';
+
+	headerBody.insertAdjacentHTML('beforeend', `
+		<span class="header__title">${curentPalette['name']}</span>
+		`);
 
 
 	colorList.forEach(color => {

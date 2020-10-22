@@ -12,10 +12,11 @@ html(lang="en")
 		.container
 			header.header
 				.wrapper
-					.header__logo
-						a.logo.logo__back(href="./")
-							+svg('Vector', 'logo__decor')
-							span.logo__text Back
+					.header__body
+						.header__logo
+							a.logo.logo__back(href="./")
+								+svg('left-arrow', 'logo__decor')
+						//.header__title pastelle
 
 			main.content
 				.wrapper
