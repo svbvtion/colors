@@ -7,13 +7,14 @@
 	font-size: 1.5em
 	position: relative
 	&__back
-		margin-left: 1.6em
-		&:before
-			content: '\2190'
-			position: absolute
-			top: 50%
-			transform: translateY(-58%)
-			font-size: 1.5em
-			left: -1.1em
-			display: inline-block
-			margin-right: 5px
+		display: flex
+		align-items: center
+		&:hover
+			.logo
+				&__decor
+					fill: $bg-third
+	&__decor
+		margin-right: 5px
+		fill: #000
+		line-height: 0
+		font-size: .75em
