@@ -1,11 +1,19 @@
 .header
 	padding: 25px 0
-	background-color: #fff
+	background-color: $bg-secondary
 	margin-bottom: 50px
 .logo
 	font-weight: bold
 	font-size: 1.5em
+	position: relative
 	&__back
+		margin-left: 1.6em
 		&:before
-			content: '←'
+			content: '\2190'
+			position: absolute
+			top: 50%
+			transform: translateY(-58%)
+			font-size: 1.5em
+			left: -1.1em
+			display: inline-block
 			margin-right: 5px

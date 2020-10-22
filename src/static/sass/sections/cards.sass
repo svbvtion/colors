@@ -1,42 +1,55 @@
+=textShadow
+	text-shadow: 1px 1px 1px $shadow-primary
+
 .cards
 	&__body	
 		display: grid
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 		grid-gap: 20px
 		+phone
-			grid-template-columns: repeat(auto-fit, minmax(170px, 1fr))
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+		+r(400)
+			grid-template-columns: repeat(auto-fit, minmax(130px, 1fr))
 
 .card
-	background-color: #fff
+	background-color: $bg-secondary
 	display: inline-block
 	padding: 15px
 	padding-bottom: 0
 	cursor: pointer
-	box-shadow: 0px 5px 7px rgba(#000, .1)
+	box-shadow: 0px 5px 7px rgba($shadow-primary, .1)
+	+r(500)
+		padding: 10px
+		padding-bottom: 0
+
 	&:hover
 		.card__appeal
 			opacity: 1
 	&__color
 		height: 250px
-		background-color: #ffb7a1
 		+flex(center, center)
 		+phone
 			height: 200px
+		+r(400)
+			height: 150px
+		
 	&__text
 		display: block
 		text-align: center
 		text-transform: uppercase
 		padding: 20px 0
 		font-weight: bold
-		color: #c3c3c3
+		color: $txt-tertiary
+		+r(400)
+			padding: 15px 0
 		
 	&__appeal
-		color: #fff
+		color: $txt-secondary
 		text-transform: uppercase
 		font-size: 2em
-		text-shadow: 1px 1px 1px #535c68
 		opacity: 0
 		+smooth
+		+textShadow
 
 .modal
 	position: fixed
@@ -44,7 +57,6 @@
 	right: 0
 	bottom: 0
 	left: 0
-	background-color: #fff
 	+flex(center, center)
 	transform: scale(0)
 	transition: all .3s ease-out
@@ -55,9 +67,9 @@
 		font-size: 5em
 		padding: 100px 0
 		font-weight: bold
-		color: #fff
+		color: $txt-secondary
 		text-transform: uppercase
-		text-shadow: 1px 1px 1px #000
+		+textShadow
 		+portrait
 			font-size: 3em
 		+phone
