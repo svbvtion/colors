@@ -1,6 +1,6 @@
 const list = {
 	pastelle: {
-		name: 'pastelle / пастельные',
+		name: 'Pastelle',
 		colors: [
 			{
 				hex: '#acdee7',
@@ -149,7 +149,7 @@ const list = {
 		]
 	},
 	whimsy:	{
-		name: 'whimsy',
+		name: 'Whimsy',
 		colors: [
 			{
 				hex: '#c4c8ad',
@@ -263,7 +263,7 @@ const list = {
 	},
 	
 	aussie: {
-		name: 'aussie',
+		name: 'Aussie',
 		colors: [
 			{
 				hex: '#fced8a',
@@ -377,7 +377,7 @@ const list = {
 	},
 
 	rainbow: {
-		name: 'rainbow',
+		name: 'Rainbow',
 		colors: [
 			{
 				hex: '#e41100',
@@ -492,7 +492,7 @@ const list = {
 	},
 
 	russian: {
-		name: 'russian',
+		name: 'Russian',
 		colors: [
 			{
 				hex: '#fea481',
@@ -605,7 +605,7 @@ const list = {
 		]
 	},
 	french: {
-		name: 'french',
+		name: 'French',
 		colors: [
 			{
 				hex: '#ffd88e',
@@ -718,7 +718,7 @@ const list = {
 		]
 	},
 	sorbet: {
-		name: 'sorbet',
+		name: 'Sorbet',
 		colors: [
 			{
 				hex: '#efdcde',
@@ -831,7 +831,7 @@ const list = {
 		]
 	},
 	neon: {
-		name: 'neon',
+		name: 'Neon',
 		colors: [
 			{
 				hex: '#55f473',

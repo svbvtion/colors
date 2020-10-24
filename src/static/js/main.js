@@ -11,6 +11,7 @@ function createCards(cardName) {
 	let curentPalette = list[cardName]
 	let colorList = curentPalette['colors'];
 
+	document.title += `| ${curentPalette.name}`
 	const headerBody = document.querySelector('.header__body');
 	const cardsContainer = document.querySelector('.cards__body');
 	const body = document.querySelector('body');
