@@ -26,17 +26,19 @@ function createCards(cardName) {
 		<span class="header__title">${curentPalette['name']}</span>
 		`);
 
+	let colorItemsHTML = ''
 
 	colorList.forEach(color => {
-		cardsContainer.insertAdjacentHTML('beforeend', `
+		colorItemsHTML += `
 		<div class="card">
 			<div class="card__color" style=background-color:${color[curentColorFormat]}>
 				<div class="card__appeal">select</div>
 			</div>
 			<span class="card__text">${color[curentColorFormat]}</span>
-		</div>
-		`);
+		</div>`;
 	});
+
+	cardsContainer.insertAdjacentHTML('beforeend', colorItemsHTML);
 
 	const cardList = document.querySelectorAll('.card');
 
