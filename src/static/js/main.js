@@ -55,13 +55,8 @@ function createCards(cardName) {
 			modal.classList.toggle('active')
 			modalText.textContent = curentColor;
 
-			body.style.marginRight = window.innerWidth - body.offsetWidth + 'px'
-			body.classList.toggle('lock')
-			
 			setTimeout(function() {
 				modal.classList.toggle('active')
-				body.style.marginRight = 0
-				body.classList.toggle('lock')
 
 			}, 500);
 			
